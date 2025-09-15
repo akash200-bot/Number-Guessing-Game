@@ -6,6 +6,19 @@ body {
   height: 100vh;
   background: linear-gradient(-4deg, #000000, #003a5b);
 }
+nav > div{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background: #000;
+    color: #ffffff;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: large;
+    font-family: sans-serif;
+}
 #wrapper {
   display: flex;
   flex-direction: column;

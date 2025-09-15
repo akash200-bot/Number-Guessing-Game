@@ -91,3 +91,14 @@ function NewGame() {
     playGame = true;
   });
 }
+
+
+const div = document.querySelector('.navdiv');
+
+const clock = new Date ;
+console.log(clock);
+
+setInterval(() => {
+  const clock = new Date() ;
+  div.innerHTML = clock.toLocaleTimeString()
+}, 1000);
