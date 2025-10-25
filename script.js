@@ -16,7 +16,7 @@ let playGame = true;
 
 if (playGame) {
   submit.addEventListener("click", function (e) {
-    e.preventDefault(); // this ill stop value to go in server or default setting of submit
+    e.preventDefault(); // this will stop value to go in server or default setting of submit
 
     const guess = parseInt(userInput.value);
     validateGuess(guess);
@@ -85,6 +85,7 @@ function NewGame() {
     pervGuess = [];
     numGuess = 1;
     guessSlot.innerHTML = "";
+    lowOrHigh.innerHTML = " ";
     remaining.innerHTML = `${11 - numGuess}`;
     userInput.removeAttribute("disabled");
     startOver.removeChild(p);
