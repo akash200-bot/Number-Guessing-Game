@@ -24,7 +24,7 @@ if (playGame) {
 }
 function validateGuess(guess) {
   if (isNaN(guess)) {
-    alert("Please enter a valid number");
+    alert("Please enter a number between 1 and 100.");
   } else if (guess < 1) {
     alert("Please enter a number more than 1");
   } else if (guess > 100) {
@@ -45,14 +45,14 @@ function validateGuess(guess) {
 
 function checkGuess(guess) {
   if (guess === randomNumber) {
-    displayMessage(`You guessed it right`);
+    displayMessage(`You guessed it!`);
     lowOrHigh.style.color = "gold";
     endGame();
   } else if (guess < randomNumber) {
-    displayMessage(` Numebr is TOOO low`);
+    displayMessage(`Number is TOO low`);
     lowOrHigh.style.color = "lightgreen";
   } else if (guess > randomNumber) {
-    displayMessage(` Numebr is TOOO high`);
+    displayMessage(`Number is TOO high`);
     lowOrHigh.style.color = "lightyellow";
   }
 }
@@ -72,7 +72,7 @@ function endGame() {
   userInput.value = "";
   userInput.setAttribute("disabled", "");
   p.classList.add("button");
-  p.innerHTML = `<h2 id="newGame">Start new Game </h2>`;
+  p.innerHTML = `<button id="newGame">Start new game</button>`;
   startOver.appendChild(p);
   playGame = false;
   NewGame();

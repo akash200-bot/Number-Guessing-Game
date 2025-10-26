@@ -1,105 +1,182 @@
 /*CSS Document */
 
+/* Global box-sizing + reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   display: flex;
-  flex-wrap: wrap;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  height: 100vh;
+  justify-content: center;
   background: linear-gradient(-4deg, #000000, #003a5b);
+  color: #fff;
+  min-height: 100vh; /* allow content to grow on small screens */
+  font-family: sans-serif;
+  padding: 20px 12px; /* breathing room on very small screens */
 }
+
 nav > div{
-    width: auto;
-    
-    height: auto;
-    padding: 20px;
-    background: #000;
-    color: #ffffff;
-    border-radius: 10px;
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    font-size: large;
-    font-family: sans-serif;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
 }
+
 #wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
-  width: auto;
-  padding: 20px 40px;
-  height: 80vh;
-  margin: auto;
-  border: 2px solid;
+  width: 90%;
+  max-width: 450px; /* keeps layout readable on large screens */
+  padding: 20px 26px;
+  margin: 60px 0; /* keep some vertical space from top nav */
+  border: 2px solid rgb(183, 183, 183);
   border-radius: 20px;
-  font-family: sans-serif;
   box-shadow: 0px 0px 12px 2px blue;
-  background: radial-gradient(#17174a, #000000);
+  background: radial-gradient(#20205f, #000000);
   text-transform: capitalize;
 }
+
 #wrapper > h1 {
   color: tomato;
+  margin: 0;
 }
+
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 16px;
+  margin-top: 24px;
+  width: 100%;
 }
+
 #guess {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 25px;
 }
+
 .guessfield {
-  color: #ffffff;
+  color: #fff;
   background: transparent;
-  border: 2px solid rgb(212, 212, 212);
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 25px;
-  /* margin: 10px 0; */
+  border: 2px solid rgba(212, 212, 212, 0.25);
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-top: 6px;
+  width: 50%;
+  margin: 0 auto; /* fluid input */
+  font-size: 1rem;
 }
+
 .guesssubmit {
-  padding: 10px 20px;
+  padding: 10px 16px;
   background-color: darkblue;
   color: azure;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 21px;
-  /* border: 2px solid; */
   cursor: pointer;
-  box-shadow: 1px 1px 6px 0px;
-  margin-bottom: 15px;
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
+  align-self: center;
+  min-width: 160px;
 }
+
 .guesssubmit:hover {
-  opacity: 0.73;
+  opacity: 0.85;
 }
+
 .lowOrHigh {
   text-align: center;
 }
+
 .resultpara {
-  margin: 10px;
+  margin: 12px 0 0 0;
 }
+.button{
+  display: flex;
+}
+
 #newGame {
   background: darkblue;
   color: azure;
   border-radius: 21px;
-  padding: 15px 20px;
+  padding: 12px 16px;
   width: 50%;
-  margin: auto;
-  font-size: 1em;
+  max-width: 220px;
+  margin: 16px auto 0 auto;
+  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 1px 1px 6px 0px;
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
   text-align: center;
 }
 
-@media (max-width : 550px ){
-  #wrapper {
-    margin: 10px;
-  }
+/* Mobile: narrow screens */
+@media (max-width: 600px) {
   nav > div{
     position: absolute;
-    top: 2px;
+    top: 8px;
+    right: 8px;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  #wrapper {
+    margin: 40px 0 20px 0;
+    padding: 16px;
+    width: 100%;
+    max-width: 480px;
+    font-size: 15px;
+  }
+
+  #guess {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    gap: 12px;
+  }
+
+  .guesssubmit {
+    width: 100%; /* full-width button on mobile */
+    min-width: 0;
+  }
+
+  #newGame {
+    width: 100%;
+    max-width: 100%;
   }
 }
+
+/* Very small phones */
+@media (max-width: 395px) {
+  body {
+    padding: 14px 10px;
+  }
+
+  #wrapper {
+    padding: 12px;
+    border-radius: 14px;
+    font-size: 14px;
+    gap: 6px;
+  }
+  .guessfield {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  }
+  #guess { font-size: 1.05rem; margin-bottom: 10px; }
+

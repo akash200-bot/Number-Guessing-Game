@@ -13,17 +13,28 @@
     <div id="wrapper">
       <h1>Number Guessing Game</h1>
       <p>Try and guess a random Number Between 1 and 100.</p>
-      <p>You have 10 attampts to guess the right number.</p>
+  <p>You have 10 attempts to guess the right number.</p>      
 
       <form class="form">
         <label for="guessfield" id="guess">Guess a number</label>
-        <input type="text" id="guessfield" class="guessfield" />
+        <input
+          type="number"
+          id="guessfield"
+          class="guessfield"
+          min="1"
+          max="100"
+          inputmode="numeric"
+          autocomplete="off"
+          required
+          aria-labelledby="guess"
+          aria-describedby="lastresult guesses"
+        />
         <input type="submit" class="guesssubmit" value="Submit guess" />
       </form>
       <div class="resultpara">
-        <p>Previous Guesses: <span class="guesses"></span></p>
-        <p>Guesses remaining: <span class="lastresult">10</span></p>
-        <p class="lowOrHigh"></p>
+        <p>Previous Guesses: <span class="guesses" id="guesses"></span></p>
+        <p>Guesses remaining: <span class="lastresult" id="lastresult">10</span></p>
+        <p class="lowOrHigh" id="lowOrHigh" role="status" aria-live="polite"></p>
       </div>
     </div>
     <script src="script.js"></script>
