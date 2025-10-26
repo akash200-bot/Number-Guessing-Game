@@ -137,7 +137,7 @@ nav > div{
     margin: 20px 10px;
     padding: 16px;
     width: 100%;
-    /* max-width: 520px; */
+    max-width: none;
   }
 
   #guess {
