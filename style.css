@@ -1,3 +1,5 @@
+/*CSS Document */
+
 body {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +10,7 @@ body {
 }
 nav > div{
     width: auto;
+    
     height: auto;
     padding: 20px;
     background: #000;
