@@ -137,7 +137,6 @@ nav > div{
     padding: 16px;
     width: 100%;
     max-width: 480px;
-    font-size: 15px;
   }
 
   #guess {
@@ -148,7 +147,9 @@ nav > div{
   .form {
     gap: 12px;
   }
-
+  .guessfield {
+    width: 100%; /* full-width input on mobile */
+  }
   .guesssubmit {
     width: 100%; /* full-width button on mobile */
     min-width: 0;
