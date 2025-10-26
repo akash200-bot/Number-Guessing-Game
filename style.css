@@ -39,7 +39,7 @@ nav > div{
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  max-width: 450px; /* keeps layout readable on large screens */
+  max-width: 550px; /* keeps layout readable on large screens */
   padding: 20px 26px;
   margin: 60px 0; /* keep some vertical space from top nav */
   border: 2px solid rgb(183, 183, 183);
