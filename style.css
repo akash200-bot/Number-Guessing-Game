@@ -61,7 +61,6 @@ nav > div{
   gap: 16px;
   margin-top: 24px;
   width: 100%;
-  font-size: 19px;
 }
 
 #guess {
@@ -131,7 +130,6 @@ nav > div{
     top: 8px;
     right: 8px;
     padding: 8px 10px;
-    font-size: 0.9rem;
   }
 
   #wrapper {
@@ -148,12 +146,21 @@ nav > div{
     font-size: 3rem;
     margin-bottom: 20px;
   }
-
+.guesssubmit {
+    font-size: 2rem;
+    border-radius: 30px;
+  }
+  #newGame {
+   font-size: 2rem;
+    border-radius: 30px;
+  }
   .form {
     gap: 12px;
   }
 
-  
+  .resultpara {
+  font-size: larger;
+}
 }
 
 /* Very small phones */
@@ -165,14 +172,22 @@ nav > div{
   #wrapper {
     padding: 12px;
     border-radius: 14px;
-    font-size: 18px;
+    font-size: 25px;
     gap: 6px;
   }
   .guessfield {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: larger;
     margin: 0 auto;
   }
+  .guesssubmit {
+    font-size: 2.5rem;
+    border-radius: 35px;
   }
-  #guess { font-size: 1.05rem; margin-bottom: 10px; }
+  #newGame {
+   font-size: 2.5rem;
+    border-radius: 35px;
+  }
+  }
 
