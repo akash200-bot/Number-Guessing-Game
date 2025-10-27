@@ -74,12 +74,12 @@ nav > div{
   color: #fff;
   background: transparent;
   border: 2px solid rgba(212, 212, 212, 0.25);
-  border-radius: 6px;
+  border-radius: 40px;
   padding: 10px 12px;
   margin-top: 6px;
   width: 50%;
   margin: 0 auto; /* fluid input */
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .guesssubmit {
@@ -87,7 +87,7 @@ nav > div{
   background-color: darkblue;
   color: azure;
   font-size: 1rem;
-  border-radius: 21px;
+  border-radius: 50px;
   cursor: pointer;
   box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
   align-self: center;
@@ -112,9 +112,9 @@ nav > div{
 #newGame {
   background: darkblue;
   color: azure;
-  border-radius: 21px;
+  border-radius: 40px;
   padding: 12px 16px;
-  width: 50%;
+  width: 70%;
   max-width: 220px;
   margin: 16px auto 0 auto;
   font-size: 1rem;
@@ -141,18 +141,21 @@ nav > div{
     max-width: none;
     font-size: 25px;
   }
+.guessfield {
 
+    font-size: 3rem;
+  }
   #guess {
     font-size: 3rem;
     margin-bottom: 20px;
   }
 .guesssubmit {
-    font-size: 2rem;
-    border-radius: 30px;
+  font-size: 3rem;
+  padding: 21px 30px;
   }
   #newGame {
-   font-size: 2rem;
-    border-radius: 30px;
+   font-size: 3rem;
+    padding: 21px 30px;
   }
   .form {
     gap: 12px;
@@ -179,15 +182,12 @@ nav > div{
     width: 100%;
     border-radius: 30px;
     font-size: larger;
-    margin: 0 auto;
   }
   .guesssubmit {
     font-size: 2.5rem;
     border-radius: 35px;
   }
-  #newGame {
-   font-size: 2.5rem;
-    border-radius: 35px;
-  }
+
+  
   }
 
