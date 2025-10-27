@@ -142,7 +142,7 @@ nav > div{
     font-size: 25px;
   }
 .guessfield {
-
+    width: 100%;
     font-size: 3rem;
   }
   #guess {
