@@ -74,8 +74,8 @@ nav > div{
   color: #fff;
   background: transparent;
   border: 2px solid rgba(212, 212, 212, 0.25);
-  border-radius: 40px;
-  padding: 10px 12px;
+  border-radius: 60px;
+  padding: 10px 40px;
   margin-top: 6px;
   width: 50%;
   margin: 0 auto; /* fluid input */
